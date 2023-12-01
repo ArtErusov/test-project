@@ -1,0 +1,23 @@
+@import '../scss/app.scss';
+
+
+.header{
+    background-color: #edebeb;
+
+    &__flex {
+        display: flex;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        justify-content: space-between;
+
+        &__right {
+        display: flex;
+
+            li {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+

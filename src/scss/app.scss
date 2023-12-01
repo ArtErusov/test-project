@@ -1,1 +1,18 @@
 @import 'reset';
+
+$black: #101010;
+$orange: #FF9B04;
+$gray: #BABAC0;
+$lightOrange:#FFD699;
+
+
+body {
+    color: $black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
