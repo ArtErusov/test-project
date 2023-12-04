@@ -17,7 +17,7 @@ const Header = () => {
                         <ul className={styles.drop + ' ' +  `${isOpen ? styles.drop_active : ""}`}>
                              {/* <= логика всплывающего меню */}
                             <li onClick={() => setOpen(!isOpen)}><Link to="http://localhost:3000/todo">todo list</Link></li>
-                            <li onClick={() => setOpen(!isOpen)}><a href="">add user</a></li>
+                            <li onClick={() => setOpen(!isOpen)}><Link to="http://localhost:3000/adduser">add user</Link></li>
                         </ul>
                     </li>
                     <li><Link to="http://localhost:3000/deliveryprototype">Доставка суши</Link></li>

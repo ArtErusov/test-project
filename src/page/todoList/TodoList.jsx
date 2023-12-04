@@ -35,7 +35,7 @@ console.log(inInputValid);
   
 return(<div className={styles.container}>
     <div className={styles.todo}>
-        <h1 style={{color: !inInputValid ? 'red' : 'gray'}}>todo list</h1> {/* Проверка ввода */}
+        <h1 style={{color: !inInputValid ? '#8e1515' : '#aeaeae'}}>todo list</h1> {/* Проверка ввода */}
        
         <TodoInput addTask={addTask} todo={todo} setTodo={setTodo} inInputValid={inInputValid}/>
 
