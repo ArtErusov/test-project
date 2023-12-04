@@ -1,8 +1,9 @@
 @import '/src/scss/reset.scss';
+@import '/src/scss/input.scss';
 
 $black: #101010;
 $orange: #FF9B04;
-$gray: #BABAC0;
+$gray: #aeaeae;
 $lightOrange:#FFD699;
 
 
@@ -17,3 +18,15 @@ body {
     margin: 0 auto;
 }
 
+.btn{
+    padding: 10px; 
+    border: 2px solid $gray;
+    border-radius: 10px; 
+    font-weight: 500;
+    color: $gray;
+    transition: 0.3s;
+        &:hover{
+            color: #fff;
+            background-color: $gray;  
+        }
+    }
