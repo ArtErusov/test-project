@@ -9,15 +9,15 @@ const Header = () => {
  return(<div className={styles.header}>
  <div className={styles.container}>
         <div className={styles.header__flex}>
-            <nav>Мой учебный проект</nav>
+            <nav><Link to="http://localhost:3000/">Мой учебный проект</Link></nav>
             <nav>
                 <ul className={styles.header__flex__right}>
                     <li>
                         <button onClick={() => setOpen(!isOpen)}>Самостоятельная работа</button>
                         <ul className={styles.drop + ' ' +  `${isOpen ? styles.drop_active : ""}`}>
                              {/* <= логика всплывающего меню */}
-                            <li><a href="">todo list</a></li>
-                            <li><a href="">add user</a></li>
+                            <li onClick={() => setOpen(!isOpen)}><Link to="http://localhost:3000/todo">todo list</Link></li>
+                            <li onClick={() => setOpen(!isOpen)}><a href="">add user</a></li>
                         </ul>
                     </li>
                     <li><Link to="http://localhost:3000/deliveryprototype">Доставка суши</Link></li>

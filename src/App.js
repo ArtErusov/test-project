@@ -2,6 +2,7 @@ import './scss/app.scss';
 import Header from './header/header';
 import IndependentPageOne from './page/IndependentPageOne';
 import DeliveryPrototype from './page/DeliveryPrototype';
+import TodoList from './page/todoList/TodoList';
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Routes>
          <Route  path='/independentone' element={<IndependentPageOne />} />
          <Route  path='/deliveryprototype' element={<DeliveryPrototype />} />
+         <Route  path='/todo' element={<TodoList />} />
       </Routes>
     </div>
   );

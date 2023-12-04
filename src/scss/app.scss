@@ -1,4 +1,4 @@
-@import 'reset';
+@import '/src/scss/reset.scss';
 
 $black: #101010;
 $orange: #FF9B04;
@@ -16,3 +16,4 @@ body {
     max-width: 1400px;
     margin: 0 auto;
 }
+
