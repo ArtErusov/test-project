@@ -1,7 +1,7 @@
 import './scss/app.scss';
 import Header from './header/header';
 import IndependentPageOne from './page/IndependentPageOne';
-import DeliveryPrototype from './page/DeliveryPrototype';
+import DeliveryPrototype from './page/delivery/DeliveryPrototype';
 import TodoList from './page/todoList/TodoList';
 import AddUser from './page/addUser/AddUser';
 
