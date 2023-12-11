@@ -3,7 +3,8 @@ import styles from '../delivery.module.scss';
 import sushiImage from '../../../assets/img/sushi.jpg';
 import HeaderCartButton from "./HeaderCartButton";
 
-const Header = (props) =>{
+
+const Header = () =>{
     return <React.Fragment>
         <header className={styles.header}>
             <h1>Япона Кухня</h1>

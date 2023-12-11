@@ -1,6 +1,5 @@
 @import '/src/scss/app.scss';
 
-
 .header {
     position: fixed;
     top: 30;
@@ -133,6 +132,98 @@
       }
     
 }
+
+.meal {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+      h3 {
+    margin: 0 0 0.25rem 0;
+  }
+      &__description {
+    font-style: italic;
+  }
+      &__price {
+    margin-top: 0.25rem;
+    font-weight: bold;
+    color: #6b068a;
+    font-size: 1.3rem;
+  }
+}
+
+.form {
+  text-align: right;
+  button {
+    font: inherit;
+    cursor: pointer;
+    background-color: #6b068a;
+    border: 1px solid #6b068a;
+    color: white;
+    padding: 0.25rem 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+      &:hover,
+      &:active {
+        background-color: #47035d;
+        border-color: #47035d;
+      }
+  }
+}
+
+
+.cart{
+  &-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 20rem;
+    overflow: auto;
+  }
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  &__actions {
+    text-align: right;
+
+    button {
+      font: inherit;
+      cursor: pointer;
+      background-color: transparent;
+      border: 1px solid #6b068a;
+      padding: 0.5rem 2rem;
+      border-radius: 25px;
+      margin-left: 1rem;
+  }
+}
+}
+
+
+
+
+
+.cart__actions button:hover,
+.cart__actions button:active {
+  background-color: #47035d;
+  border-color: #47035d;
+  color: white;
+}
+
+.cart__actions .button--alt {
+  color: #6b068a;
+}
+
+.cart__actions .button {
+  background-color: #6b068a;
+  color: white;
+}
+
 
  
   
