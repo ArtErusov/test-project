@@ -4,11 +4,11 @@ import sushiImage from '../../../assets/img/sushi.jpg';
 import HeaderCartButton from "./HeaderCartButton";
 
 
-const Header = () =>{
+const Header = (props) =>{
     return <React.Fragment>
         <header className={styles.header}>
             <h1>Япона Кухня</h1>
-            <HeaderCartButton />
+            <HeaderCartButton onShowModal={props.onShowModal}/>
         </header>
         <div className={styles.main__image}>
             <img src={sushiImage} alt="японская кухня"/>

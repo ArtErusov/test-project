@@ -3,10 +3,10 @@ import styles from './delivery.module.scss';
 import Header from "./components/Header";
 import Meals from "./components/Meals";
 
-const DeliveryPrototype = () => {
+const DeliveryPrototype = (props) => {
     
     return<React.Fragment>
-        <Header />
+        <Header onShowModal={props.onShowModal}/>
         <Meals />
     </React.Fragment>
 }

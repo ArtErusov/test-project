@@ -1,7 +1,8 @@
 
 import styles from '../delivery.module.scss';
+import Modal from './ui/Modal';
 
-const Cart = () =>{
+const Cart = (props) =>{
 
 const cartItems = (
 <ul className={styles['cart-items']}>
@@ -12,17 +13,17 @@ const cartItems = (
 );
 
 
-return <div>
+return <Modal>
     {cartItems}
     <div className={styles.cart__total}>
         <span>Итого</span>
         <span>49.99</span>
     </div>
     <div div className={styles.cart__actions}>
-        <button>Закрыть</button>
+        <button onClick={props.onHideModal}>Закрыть</button>
         <button>Заказать</button>
     </div>
-</div>
+</Modal>
 }
 
 export default Cart;

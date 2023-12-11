@@ -6,7 +6,7 @@ import CartIcon from '../../../assets/img/icon/CartIcon';
 
 const HeaderCartButton = (props) =>{
     return <React.Fragment>
-        <button className={styles.button}>
+        <button className={styles.button} onClick={props.onShowModal}>
             <span className={styles.button__icon}><CartIcon /></span>
             <span>Корзина</span>
             <span className={styles.button__badge}>0</span>
