@@ -13,7 +13,7 @@ const cartItems = (
 );
 
 
-return <Modal>
+return <Modal onHideModal={props.onHideModal}> 
     {cartItems}
     <div className={styles.cart__total}>
         <span>Итого</span>
