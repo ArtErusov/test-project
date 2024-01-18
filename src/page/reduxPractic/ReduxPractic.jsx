@@ -1,15 +1,17 @@
 import { Fragment } from 'react';
-import styles from './redux.module.scss';
+import styles from './style.module.scss';
 
 import ReduxPracticOne from './ReduxPracticOne';
+import Divider from '../../components/ui/Divider/Divider';
 
 
 const ReduxPractic = () =>{
 
 
 return(<Fragment>
-<p>Практика 1 с Redux</p>
+<Divider title={'Работа с нативным Redux'}/>
 <ReduxPracticOne/>
+<Divider title={'Работа с ReduxToolkit'}/>
 </Fragment>)
 }
 
