@@ -9,6 +9,7 @@ import TodoList from './page/todoList/TodoList';
 import AddUser from './page/addUser/AddUser';
 import Cart from './page/delivery/components/Cart';
 import Test from './Test/Test'
+import ReduxPractic from './page/reduxPractic/ReduxPractic'
 
 
 
@@ -29,6 +30,7 @@ function App() {
          <Route  path='/todo' element={<TodoList />} />
          <Route  path='/adduser' element={<AddUser />} />
          <Route  path='/testUse' element={<Test />} />
+         <Route  path='/reduxpractic' element={<ReduxPractic />} />
       </Routes>
     </React.Fragment>
   );

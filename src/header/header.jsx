@@ -19,6 +19,7 @@ const Header = () => {
                             <li onClick={() => setOpen(!isOpen)}><Link to="http://localhost:3000/todo">todo list</Link></li>
                             <li onClick={() => setOpen(!isOpen)}><Link to="http://localhost:3000/adduser">add user</Link></li>
                             <li onClick={() => setOpen(!isOpen)}><Link to="http://localhost:3000/testUse">testUse</Link></li>
+                            <li onClick={() => setOpen(!isOpen)}><Link to="http://localhost:3000/reduxpractic">ReduxPractic</Link></li>
                         </ul>
                     </li>
                     <li><Link to="http://localhost:3000/deliveryprototype">Доставка суши</Link></li>
