@@ -17,8 +17,8 @@ const Header = () => {
                         <ul className={styles.drop + ' ' +  `${isOpen ? styles.drop_active : ""}`}>
                              {/* <= логика всплывающего меню */}
                             <li onClick={() => setOpen(!isOpen)}><Link to="http://localhost:3000/todo">todo list</Link></li>
-                            <li onClick={() => setOpen(!isOpen)}><Link to="http://localhost:3000/adduser">add user</Link></li>
-                            <li onClick={() => setOpen(!isOpen)}><Link to="http://localhost:3000/testUse">testUse</Link></li>
+                            <li onClick={() => setOpen(!isOpen)}><Link to="http://localhost:3000/adduser">add user OLD</Link></li>
+                            <li onClick={() => setOpen(!isOpen)}><Link to="http://localhost:3000/testUse">testUse OLD</Link></li>
                             <li onClick={() => setOpen(!isOpen)}><Link to="http://localhost:3000/reduxpractic">ReduxPractic</Link></li>
                         </ul>
                     </li>
