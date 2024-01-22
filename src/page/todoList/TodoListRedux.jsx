@@ -1,26 +1,28 @@
 import styles from './todoList.module.scss';
-
+import { useSelector, useDispatch } from 'react-redux';
 import React, { useState } from "react";
 
-
+import {addTodo} from '../../assets/store/todoSlice'
 
 const TodoListRedux = () =>{
-const [todos, setTodos] = useState([])
+const todos = useSelector(state => state.todos.todos);
+const dispatch = useDispatch();
+// const [todos, setTodos] = useState([])
 const [text, setText] = useState('')
  
-const addTodo = () => {
-    if (text.trim().length){
-    setTodos([
-        ...todos,
-        {
-            id: new Date().toISOString(),
-            text,
-            compleated: false,
-        }
-    ])
-    setText('') 
-   } 
-}
+// const addTodo = () => {
+//     if (text.trim().length){
+//     setTodos([
+//         ...todos,
+//         {
+//             id: new Date().toISOString(),
+//             text,
+//             compleated: false,
+//         }
+//     ])
+//     setText('') 
+//    } 
+// }
 
 const removeTodo = (todoId) =>{
     setTodos(todos.filter(item => item.id !== todoId))
