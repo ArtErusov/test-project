@@ -4,13 +4,10 @@ import React, { useState } from "react";
 
 
 
-const TodoList = () =>{
+const TodoListRedux = () =>{
 const [todos, setTodos] = useState([])
 const [text, setText] = useState('')
  
-
-//Добавляем в state новый объект который формируем из инпута
-// text.trim().length убираем пробелы и проверяем есть ли буквы в строке
 const addTodo = () => {
     if (text.trim().length){
     setTodos([
@@ -21,11 +18,10 @@ const addTodo = () => {
             compleated: false,
         }
     ])
-    // Обнуляем данные в инпуте
     setText('') 
    } 
 }
-// удаляем наше туду с помощью проверки id При клике передаем id а дальше сверяем наше ID 
+
 const removeTodo = (todoId) =>{
     setTodos(todos.filter(item => item.id !== todoId))
 }
@@ -73,4 +69,4 @@ return(
     }
 
 
-export default TodoList;
+export default TodoListRedux;

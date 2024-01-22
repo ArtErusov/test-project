@@ -1,3 +1,46 @@
 @import '../../assets/scss/app.scss';
 
 
+.todo{
+    margin: 30px 0 30px 660px ;
+
+
+    &__input{
+        border: 2px solid $gray;
+        width: 500px;
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+    &__button{
+        margin-left: 20px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: 2px solid $gray;
+        background-color: $gray;
+        color: $white;
+        font-weight: 500;
+    }
+    &__ul{
+      
+        &__li{
+            margin-top: 30px;
+            
+        }
+        &__p{
+            margin-left: 20px;
+            border: 2px solid $gray;
+            padding: 10px 20px;
+            border-radius: 30px; 
+        }
+
+       &__del{
+            margin-right: 20px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 2px solid $gray;
+            background-color: $gray;
+            color: $white;
+            font-weight: 500;
+        } 
+    }
+}
