@@ -6,3 +6,14 @@
     padding: 8px 0;
     color:$white;
 }
+
+.flex{
+    display: flex;
+    justify-content: center;
+     h3{
+        padding-right: 40px ;
+     }
+     p{
+        font-weight: 500;
+     }
+}
