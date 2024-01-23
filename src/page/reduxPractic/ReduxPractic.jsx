@@ -16,10 +16,10 @@ return(<Fragment>
         title={'Работа с нативным Redux'} 
         text={'asdsfsdds'}/>
 
-    <Divider title={'Работа с нативным Redux'}/>
+    <Divider title={'Работа с ReduxToolkit'}/>
     <ReduxPracticOne counterOne={counterOne} setCounterOne={setCounterOne}/>
 
-    <Divider title={'Работа с ReduxToolkit'}/>
+    <Divider title={'Работа с ReduxToolkit в одном компоненте'}/>
     <ReduxPracticTwo/>
 
     <Divider title={'пустой шаблон'}/>

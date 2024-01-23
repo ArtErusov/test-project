@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import Description from '../../components/ui/Description/Description';
 import Divider from '../../components/ui/Divider/Divider';
 import TodoList from './TodoList';
-import TodoListRedux from './TodoListRedux';
+// import TodoListRedux from './TodoListRedux';
 
 import styles from './todoList.module.scss';
 
@@ -17,7 +17,7 @@ return(<Fragment>
     <TodoList/>
 
     <Divider title={'TodoList с Toolkit'}/>
-    <TodoListRedux/>
+    {/* <TodoListRedux/> */}
 </Fragment>);
     }
 
